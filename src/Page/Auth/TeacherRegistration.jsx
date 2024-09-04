@@ -169,6 +169,7 @@ function TeacherRegistration() {
               }}
               isMulti
               name="slots"
+              required
               options={timeOptions}
               className="custom-select"
               classNamePrefix="custom"
