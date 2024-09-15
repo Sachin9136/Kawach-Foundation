@@ -101,13 +101,13 @@ function Home() {
           <Column className="flex">
           <div className="our-impact-carousel owl-carousel owl-theme">
             <div className="item">
-              <img src={(Slider1)} alt="Image 1"/>
+              <img src={Slider1} alt="Image 1"/>
             </div>
             <div className="item">
-              <img src={(Slider1)} alt="Image 1"/>
+              <img src={Slider1} alt="Image 1"/>
             </div>
             <div className="item">
-              <img src={(Slider1)} alt="Image 1"/>
+              <img src={Slider1} alt="Image 1"/>
             </div>
           </div>
           </Column>
