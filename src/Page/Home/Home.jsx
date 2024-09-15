@@ -16,7 +16,7 @@ import Rectangle3 from "../../components/Img/Rectangle3.png";
 import Rectangle4 from "../../components/Img/Rectangle4.png";
 import Rectangle5 from "../../components/Img/Rectangle5.png";
 import Rectangle6 from "../../components/Img/Rectangle6.png";
-import Slider1 from "../../components/Img/Slider1.png";
+// import Slider1 from "../../components/Img/Slider1.png";
 import Consultation from "../../components/Img/consultation-consult.png";
 import Dental from "../../components/Img/dental-plus-svgrepo-com.png";
 import Doctor from "../../components/Img/doctor-health.png";
@@ -94,7 +94,7 @@ function Home() {
           </Column>
       </Row>
 
-      <Row className="py-5">
+      {/* <Row className="py-5">
           <Heading className={"our-works-heading text-4xl font-bold text-center"}>
           Our Impact
           </Heading>
@@ -111,7 +111,7 @@ function Home() {
             </div>
           </div>
           </Column>
-      </Row>
+      </Row> */}
 
       <Row className="flex justify-center">
       <Column className="columns-4 cards-column">
