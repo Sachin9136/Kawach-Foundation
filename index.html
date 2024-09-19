@@ -27,14 +27,14 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+      <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
 
     <script>
 
-      const prevIcon = '<img src="/src/components/Img/left.png" alt="" width="90px">'
-      const nextIcon = '<img src="/src/components/Img/right.png" alt="" width="90px">'
+      const prevIcon = '<img src="./src/assets/Img/left.png" alt="" width="90px">'
+      const nextIcon = '<img src="./src/assets/Img/right.png" alt="" width="90px">'
 
       $(document).ready(function(){
         $(".our-impact-carousel").owlCarousel({
@@ -64,6 +64,40 @@
       });
 
     </script>
+
+<script>
+
+  // const prevIcon = '<img src="./src/assets/Img/left.png" alt="" width="90px">'
+  // const nextIcon = '<img src="./src/assets/Img/right.png" alt="" width="90px">'
+
+  $(document).ready(function(){
+    $(".our-journey-carousel").owlCarousel({
+      loop: true,        
+      margin: 10,       
+      nav: true,        
+      autoplay: true,    
+      autoplayTimeout: 3000, 
+      arrow: true,
+      dots: false,
+      navText:[
+      prevIcon,
+      nextIcon
+      ],
+      responsive: {
+        0: {
+          items: 1      
+        },
+        600: {
+          items: 1       
+        },
+        1000: {
+          items: 1      
+        }
+      }
+    });
+  });
+
+</script>
 
 <script>
 
@@ -100,6 +134,106 @@
     });
   });
 </script>
-    
+
+<script>
+
+  $(document).ready(function(){
+    $(".gallery-carousel").owlCarousel({
+      loop: true,        
+      margin: 10,       
+      nav: true,        
+      autoplay: true,    
+      autoplayTimeout: 3000, 
+      arrow: false,
+      dots: true,
+      navText:[
+      prevIcon,
+      nextIcon
+      ],
+      responsive: {
+        0: {
+          items: 1      
+        },
+        600: {
+          items: 2       
+        },
+        1000: {
+          items: 3     
+        },
+        1200: {
+          items: 4     
+        }
+      }
+    });
+  });
+</script>
+
+<script>
+
+  $(document).ready(function(){
+    $(".partner-carousel").owlCarousel({
+      loop: true,        
+      margin: 10,       
+      nav: true,        
+      autoplay: true,    
+      autoplayTimeout: 3000, 
+      arrow: false,
+      dots: true,
+      navText:[
+      prevIcon,
+      nextIcon
+      ],
+      responsive: {
+        0: {
+          items: 1      
+        },
+        600: {
+          items: 2       
+        },
+        1000: {
+          items: 3     
+        },
+        1200: {
+          items: 4     
+        }
+      }
+    });
+  });
+</script>
+
+<script>
+
+  // const prevIcon = '<img src="./src/assets/Img/left.png" alt="" width="90px">'
+  // const nextIcon = '<img src="./src/assets/Img/right.png" alt="" width="90px">'
+
+  $(document).ready(function(){
+    $(".Events-carousel").owlCarousel({
+      loop: true,        
+      margin: 10,       
+      nav: true,        
+      autoplay: true,    
+      autoplayTimeout: 3000, 
+      arrow: true,
+      dots: false,
+      navText:[
+      prevIcon,
+      nextIcon
+      ],
+      responsive: {
+        0: {
+          items: 1      
+        },
+        600: {
+          items: 2       
+        },
+        1000: {
+          items: 3      
+        }
+      }
+    });
+  });
+
+</script>
+
   </body>
 </html>

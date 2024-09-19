@@ -5,9 +5,13 @@ import Icon from "../Button/Icon";
 function Sidebar({ closeMenu }) {
   const menuItem = [
     { id: 1, name: "Home", link: "/", icon: "house" },
-    { id: 2, name: "Teacher", link: "/teachers", icon: "person" },
-    { id: 4, name: "Service", link: "/plan", icon: "ui-radios-grid" },
-    { id: 5, name: "Blog", link: "/blog", icon: "grid" },
+    { id: 2, name: "About Us", link: "/about-us" },
+    { id: 3, name: "Programme & Services", link: "/programme-services" },
+    { id: 4, name: "Get Involved", link: "/get-involved" },
+    // { id: 4, name: "Dental Treatment", link: "/dental-treatment" },
+    { id: 5, name: "News & Updates", link: "/news-updates"},
+    { id: 6, name: "Service", link: "/plan", icon: "ui-radios-grid" },
+    { id: 7, name: "Blog", link: "/blog", icon: "grid" },
   ];
   return (
     <>

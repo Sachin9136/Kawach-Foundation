@@ -22,14 +22,11 @@ function Navbar() {
 
   const menuItems = [
     { id: 1, name: "Home", link: "/" },
-    {
-      id: 2,
-      name: "About Us",
-      link: "/teacher-registration",
-    },
-    { id: 3, name: "Programme & Services", link: "/teachers"},
-    { id: 4, name: "Get Involved", link: "/plan" },
-    { id: 5, name: "News Updates", link: "/blog"},
+    {id: 2,name: "About Us",link: "/about-us",},
+    { id: 3, name: "Programme & Services", link: "/programme-services"},
+    { id: 4, name: "Get Involved", link: "/get-involved" },
+    // { id: 4, name: "Dental Treatment", link: "/dental-treatment" },
+    { id: 5, name: "News & Updates", link: "/news-updates"},
     { id: 6, name: "Store", link: "/blog"},
     { id: 7, name: "Courses", link: "/blog"},
   ];
@@ -38,13 +35,13 @@ function Navbar() {
     <Row className="flex justify-between items-center px-5 py-2">
       <Column className="flex items-center ">
         <OffCanvas />
-        <img src="src/components/img/logo1.png" alt="" width="88px"/>
+        <img src="src/assets/img/logo.svg" alt="" width="88px"/>
         {/* <Heading className="text-2xl font-bold">YogaNests</Heading> */}
       </Column>
 
       <Column className=" lg:flex items-center space-x-4">
         {/* Menu Items */}
-        <Column className="hidden lg:flex items-center space-x-4">
+        <Column className="hidden lg:flex items-center space-x-4 gap-3 lg:gap-5">
           {menuItems.map((item) => (
             <NavLink
               key={item.id}

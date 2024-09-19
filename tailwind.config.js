@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         "custom-peach": "#fff7ed",
+        "background-color":"#06B13D"
       },
     },
   },
