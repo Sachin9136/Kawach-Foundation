@@ -14,6 +14,8 @@ import Get_Involved from "./Page/Get_Involved/Get_Involved";
 import Login from "./Page/Login/Login";
 import Home from "./Page/Home/Home";
 import News_Updates from "./Page/News_Updates/News_Updates";
+import Courses from "./Page/Courses/Courses";
+import Blog from "./Page/Blog/Blog";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,6 +26,8 @@ const router = createBrowserRouter(
       <Route path="get-involved" element={<Get_Involved />} />
       {/* <Route path="dental-treatment" element={<Dental_Treatment />} /> */}
       <Route path="news-updates" element={<News_Updates />} />
+      <Route path="courses" element={<Courses />} />
+      <Route path="blog" element={<Blog />} />
       {/* login */}
       <Route path="login" element={<Login />} />
     </Route>

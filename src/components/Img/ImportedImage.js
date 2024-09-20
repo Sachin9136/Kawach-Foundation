@@ -52,10 +52,13 @@ import News_Blog from "../../../src/assets/Img/News-Blog.svg";
 import Medicine_icon from "../../../src/assets/Img/medicine.svg";
 import Donation_img from "../../../src/assets/Img/donation_img.svg";
 import Volunteer_img from "../../../src/assets/Img/Volunteer_img.svg";
+import Course_blog_banner from "../../../src/assets/Img/course-blog-banner.svg";
+import down_arrow from "../../../src/assets/Img/down-arrow.svg";
+import Blog_img from "../../../src/assets/Img/Blog_img.svg";
 
 export { person,hero ,loginsideimage,sinupimage,logo, banner,
 about_us_sec, Rectangle1, Rectangle2, Rectangle3, Rectangle4, Rectangle5, Rectangle6, Slider1, Consultation, Dental, Doctor, Stars, Enviroment,
 mini_slider,gallery_img, dental_plus, plant_fill, awareness, doctor_health, education_book, women, health_care, bannerAboutUs, about_us_2, 
 education_book_aboutus, doctor_aboutus, hut_aboutus, health_care_aboutus, profile1, profile2, profile3, profile4, profile5, profile6, healthIcon,
 plant_fill2, online_customer, flood_svgrepo, Dental_Treatment_Banner, dental_1, Events_carousel_1, Events_carousel_2, Events_carousel_3,
-Journy_highlights, News_Blog, Medicine_icon, Donation_img, Volunteer_img};
+Journy_highlights, News_Blog, Medicine_icon, Donation_img, Volunteer_img, Course_blog_banner, down_arrow, Blog_img};

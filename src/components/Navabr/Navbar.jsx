@@ -27,8 +27,8 @@ function Navbar() {
     { id: 4, name: "Get Involved", link: "/get-involved" },
     // { id: 4, name: "Dental Treatment", link: "/dental-treatment" },
     { id: 5, name: "News & Updates", link: "/news-updates"},
-    { id: 6, name: "Store", link: "/blog"},
-    { id: 7, name: "Courses", link: "/blog"},
+    { id: 6, name: "Courses", link: "/courses"},
+    { id: 7, name: "Blog", link: "/blog"},
   ];
 
   return (
@@ -45,7 +45,8 @@ function Navbar() {
             <NavLink
               key={item.id}
               to={item.link}
-              className="font-semibold"
+              className="font-semib
+              old"
             >
               <Icon children={item.icon} />
               {item.name}
@@ -66,7 +67,7 @@ function Navbar() {
             >
             Donate Now
             </Button>
-            {isOpen && (
+            {/* {isOpen && (
               <Wraper
                 className="absolute right-0 z-10 mt-2 w-48 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5"
                 role="menu"
@@ -97,7 +98,7 @@ function Navbar() {
                   Sign out
                 </NavLink>
               </Wraper>
-            )}
+            )} */}
           </Wraper>
         </Column>
       </Column>
