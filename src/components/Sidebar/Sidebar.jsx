@@ -4,14 +4,14 @@ import Icon from "../Button/Icon";
 
 function Sidebar({ closeMenu }) {
   const menuItem = [
-    { id: 1, name: "Home", link: "/", icon: "house" },
+    { id: 1, name: "Home", link: "/" },
     { id: 2, name: "About Us", link: "/about-us" },
     { id: 3, name: "Programme & Services", link: "/programme-services" },
     { id: 4, name: "Get Involved", link: "/get-involved" },
     // { id: 4, name: "Dental Treatment", link: "/dental-treatment" },
     { id: 5, name: "News & Updates", link: "/news-updates"},
-    { id: 6, name: "Service", link: "/plan", icon: "ui-radios-grid" },
-    { id: 7, name: "Blog", link: "/blog", icon: "grid" },
+    { id: 6, name: "Service", link: "/plan" },
+    { id: 7, name: "Blog", link: "/blog" },
   ];
   return (
     <>
@@ -23,8 +23,8 @@ function Sidebar({ closeMenu }) {
               className={({ isActive }) =>
                 `flex items-center p-2 rounded-md ${
                   isActive
-                    ? "bg-white text-black shadow"
-                    : "text-white hover:bg-orange-200 hover:text-black"
+                    ? "bg-white text-black font-semibold shadow"
+                    : "text-black font-medium hover:bg-orange-200 hover:text-black"
                 }`
               }
               onClick={closeMenu}

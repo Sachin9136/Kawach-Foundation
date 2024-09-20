@@ -3,7 +3,7 @@ import React from 'react';
 const ServiceCard = ({ icon, title, points, borderColor = 'border-transparent' }) => {
   return (
     <div className={'p-5 bg-white shadow-lg rounded-xl border-2 h-auto'}>
-      <div className="flex pb-3">
+      <div className="flex pb-3"> 
         <div className="">
           <img src={icon} alt={`${title} icon`} className="" />
         </div>

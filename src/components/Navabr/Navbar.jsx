@@ -36,12 +36,11 @@ function Navbar() {
       <Column className="flex items-center ">
         <OffCanvas />
         <img src="src/assets/img/logo.svg" alt="" width="88px"/>
-        {/* <Heading className="text-2xl font-bold">YogaNests</Heading> */}
       </Column>
 
       <Column className=" lg:flex items-center space-x-4">
         {/* Menu Items */}
-        <Column className="hidden lg:flex items-center space-x-4 gap-3 lg:gap-5">
+        <Column className="hidden lg:flex items-center space-x-4 gap-3">
           {menuItems.map((item) => (
             <NavLink
               key={item.id}

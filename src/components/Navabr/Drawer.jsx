@@ -21,17 +21,17 @@ function OffCanvas() {
 
       {/* Off-canvas menu */}
       <div
-        className={`fixed top-0 left-0 w-64 h-full bg-orange-300 shadow-lg transform transition-transform z-10 ${
+        className={`fixed top-0 left-0 w-64 h-full bg-[#FFED05] shadow-lg transform transition-transform z-10 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <Column className="flex justify-between mx-3">
+        <Column className="flex justify-between mx-3 mt-5 mb-3">
           <Heading
-            children={"YogaNest"}
+            children={"Kawach"}
             className={"text-xl font-bold tracking-widest"}
           />
           <i
-            className="bi bi-x-lg text-xl my-2"
+            className="bi bi-x-lg text-xl "
             onClick={() => setIsOpen(false)}
           ></i>
         </Column>

@@ -25,9 +25,9 @@ const footer = () => {
       </Wraper>
 
       {/* Footer Section */}
-      <footer className=" text-white px-20" 
+      <footer className=" text-white px-4 md:px-10 lg:px-20" 
       style={{ backgroundColor: "#06B13D" }}>
-        <Row className="container mx-auto grid grid-cols-4 gap-4">
+        <Row className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {/* Logo and Copyright */}
           <Wraper className="col-span-1 py-3">
             <img src={logo} alt="Logo" className="mb-4" width="40%"/>
@@ -36,7 +36,7 @@ const footer = () => {
           </Wraper>
 
           {/* Quick Links */}
-          <div className="col-span-1 py-10">
+          <div className="col-span-1 py-4 md:py-5 lg:py-10">
             <h4 className="text-black font-bold text-3xl mb-4">Quick Links</h4>
             <ul>
               <li className='py-1'><a href="#home" className="text-[#FFED05] hover:underline text-xl font-medium">Home</a></li>
@@ -50,7 +50,7 @@ const footer = () => {
           </div>
 
           {/* Our Works */}
-          <div className="col-span-1 py-10">
+          <div className="col-span-1 py-4 md:py-5 lg:py-10">
             <h4 className="text-black font-bold text-3xl mb-4">Our Works</h4>
             <ul>
               <li className='py-1'><a href="#works" className="text-[#FFED05] hover:underline text-xl my-20 font-medium">Our Works</a></li>
