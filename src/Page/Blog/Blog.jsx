@@ -67,6 +67,26 @@ const Courses = () => {
                     <h3 className="text-3xl font-semibold text-[#FFED05]">Top 10 Business Ideas to Grow</h3>
                 </div>
             </div>
+
+            <div className="card-slider py-5 md:py-10">
+                <div>
+                    <img src={(Blog_img)} alt="Image 1" width="100%"/>
+                </div>
+                <div className="card-text-area rounded-b-2xl px-3 pt-3 pb-7 content-center">
+                    <p className='text-white text-xl font-medium py-2'>Updated on 8 sep 2024</p>
+                    <h3 className="text-3xl font-semibold text-[#FFED05]">Top 10 Business Ideas to Grow</h3>
+                </div>
+            </div>
+
+            <div className="card-slider py-5 md:py-10">
+                <div>
+                    <img src={(Blog_img)} alt="Image 1" width="100%"/>
+                </div>
+                <div className="card-text-area rounded-b-2xl px-3 pt-3 pb-7 content-center">
+                    <p className='text-white text-xl font-medium py-2'>Updated on 8 sep 2024</p>
+                    <h3 className="text-3xl font-semibold text-[#FFED05]">Top 10 Business Ideas to Grow</h3>
+                </div>
+            </div>
           </Column>
       </Row>
 

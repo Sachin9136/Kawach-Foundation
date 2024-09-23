@@ -16,6 +16,11 @@ import Home from "./Page/Home/Home";
 import News_Updates from "./Page/News_Updates/News_Updates";
 import Courses from "./Page/Courses/Courses";
 import Blog from "./Page/Blog/Blog";
+import Store from "./Page/Store/Store";
+import Product_Details from "./Page/Product_Details/Product_Details";
+import Cart_page from "./Page/Cart_page/Cart_page";
+import Checkout from "./Page/Checkout/Checkout";
+import Order_Completed from "./Page/Order_Completed/Order_Completed";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -28,6 +33,11 @@ const router = createBrowserRouter(
       <Route path="news-updates" element={<News_Updates />} />
       <Route path="courses" element={<Courses />} />
       <Route path="blog" element={<Blog />} />
+      <Route path="store" element={<Store />} />
+      <Route path="product-details" element={<Product_Details />} />
+      <Route path="cart-page" element={<Cart_page />} />
+      <Route path="checkout" element={<Checkout />} />
+      <Route path="order-completed" element={<Order_Completed />} />
       {/* login */}
       <Route path="login" element={<Login />} />
     </Route>

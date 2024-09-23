@@ -28,7 +28,7 @@ function Navbar() {
     // { id: 4, name: "Dental Treatment", link: "/dental-treatment" },
     { id: 5, name: "News & Updates", link: "/news-updates"},
     { id: 6, name: "Courses", link: "/courses"},
-    { id: 7, name: "Blog", link: "/blog"},
+    { id: 7, name: "Blog", link: "/store"},
   ];
 
   return (
@@ -40,7 +40,7 @@ function Navbar() {
 
       <Column className=" lg:flex items-center space-x-4">
         {/* Menu Items */}
-        <Column className="hidden lg:flex items-center space-x-4 gap-3">
+        <Column className="hidden lg:flex items-center font-semibold space-x-4 gap-3">
           {menuItems.map((item) => (
             <NavLink
               key={item.id}
