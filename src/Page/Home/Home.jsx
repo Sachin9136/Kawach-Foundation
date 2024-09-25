@@ -30,6 +30,7 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 
 function Home() {
+  
   return (
     <>
       <Row className="bg-no-repeat bg-cover h-[510px] lg:h-[633px]" style={{ backgroundImage: `url(${banner})` }}>
