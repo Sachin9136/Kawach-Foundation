@@ -32,7 +32,7 @@ import { Link } from "react-router-dom";
 function Home() {
   
   return (
-    <>
+    <> 
       <Row className="bg-no-repeat bg-cover h-[510px] lg:h-[633px]" style={{ backgroundImage: `url(${banner})` }}>
         <div className="absolute top-[200px] left-[30px] text-[#FFED05] lg:top-[270px] lg:left-[50px]">
           <Heading className={"text-4xl md:text-5xl lg:text-7xl font-bold"}>
