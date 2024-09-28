@@ -28,7 +28,8 @@ function Navbar() {
     // { id: 4, name: "Dental Treatment", link: "/dental-treatment" },
     { id: 5, name: "News & Updates", link: "/news-updates"},
     { id: 6, name: "Courses", link: "/courses"},
-    { id: 7, name: "Blog", link: "/store"},
+    { id: 7, name: "Blog", link: "/blog"},
+    { id: 7, name: "Store", link: "/store"},
   ];
 
   return (

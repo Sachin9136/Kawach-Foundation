@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ProductCard from '../ProductCard_Component/ProductCard';
 import ReactPaginate from 'react-paginate';
 import { Product_img, ShoppingCart, Login_signup } from '../../components/Img/ImportedImage';
+import { Link } from "react-router-dom";
 
 const productData = [
   { id: 1, title: 'Ecosprin 75mg Strip Of 14 Tablets', price: 1, company_name: 'By SUV PVT LTD', image: Product_img },
@@ -39,12 +40,14 @@ const ProductListing = () => {
         <div className='flex justify-between'>
           <h1 className="text-xl md:text-2xl lg:text-3xl font-bold">Kawach Store</h1>
           <div className='block md:hidden'>
-            <button className="font-bold text-md mr-5">
-              <div className='flex justify-center mb-1'>
-                <img src={Login_signup} alt="Login/Signup" width="35px" />
-              </div>
-              <div>Login/Signup</div>
-            </button>
+            <Link to={"/checkout"}>
+              <button className="font-bold text-md mr-5">
+                <div className='flex justify-center mb-1'>
+                  <img src={Login_signup} alt="Login/Signup" width="35px" />
+                </div>
+                <div>Login/Signup</div>
+              </button>
+            </Link>
             <button className=" font-bold text-md">
               <div className='flex justify-center mb-1'>
                 <img src={ShoppingCart} alt="Cart" width="35px" />

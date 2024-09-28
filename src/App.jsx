@@ -21,6 +21,7 @@ import Product_Details from "./Page/Product_Details/Product_Details";
 import Cart_page from "./Page/Cart_page/Cart_page";
 import Checkout from "./Page/Checkout/Checkout";
 import Order_Completed from "./Page/Order_Completed/Order_Completed";
+import Sign_up from "./Page/Sign_up/Sign_up";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -40,6 +41,7 @@ const router = createBrowserRouter(
       <Route path="order-completed" element={<Order_Completed />} />
       {/* login */}
       <Route path="login" element={<Login />} />
+      <Route path="sign-up" element={<Sign_up />} />
     </Route>
   )
 );
