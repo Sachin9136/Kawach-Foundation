@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Banner from "../../components/Banners/Banners";
-import { Store_banner, Medicine1, Medicine2, Medicine3, Close } from "../../components/Img/ImportedImage";
+import { Store_banner, Medicine1, Medicine2, Medicine3 } from "../../components/Img/ImportedImage";
 import {
     Column,
     Heading,

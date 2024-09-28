@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Banner from "../../components/Banners/Banners";
-import { Store_banner, Medicine1, Medicine2, Medicine3, Close } from "../../components/Img/ImportedImage";
+import { Store_banner, Medicine1, Medicine2, Medicine3 } from "../../components/Img/ImportedImage";
 import {
     Column,
     Heading,
@@ -12,7 +12,7 @@ import {
   import Footer from "../../components/footer/footer";
   import Store_Footer from "../../components/Store_Footer/Store_Footer";
   import { Link } from "react-router-dom";
-
+ 
 // Sample data (you can replace it with dynamic data)
 const initialCart = [
   {
@@ -130,7 +130,7 @@ const Cart_page = () => {
                       className="text-red-500"
                       onClick={() => handleRemove(item.id)}
                     >
-                      <img src={Close} alt="" width="15px"/>
+                      {/* <img src={Close} alt="" width="15px"/> */}
                     </button>
                   </td>
                 </tr>
