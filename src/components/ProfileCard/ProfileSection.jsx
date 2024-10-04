@@ -1,69 +1,82 @@
-import React from 'react';
-import ProfileCard from './ProfileCard';
-import {profile1, profile2, profile3, profile4, profile5, profile6} from '../../components/Img/ImportedImage'; 
+import React, { useEffect, useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { Button } from "../../components/ComponentsIndex";
+import { getallTeam } from "../../ReduxToolkit/Slice/Team";
 
-const ProfileSection = () => {
-  const profiles = [
-    {
-      image: profile1,
-      name: 'Dr. Nivedita Jha',
-      title: 'President Kawach Foundation',
-      description: 'She is a dentist by profession having hands-on experience since 2010. She has expertise in RCT, implant, etc. Her devotion towards people, especially the deprived and unempowered, is remarkable.',
-      link: '/teacher-registration',
-    },
-    {
-      image: profile4,
-      name: 'Adv Sushmita ',
-      title: 'Vice Secretary ',
-      description: 'Sushmita is an accomplished advocate with five years of experience practicing law in the esteemed Patna High Court. Throughout her career, she has demonstrated a steadfast commitment.',
-      link: '/teacher-registration',
-    },
-    {
-      image: profile3,
-      name: 'Adv Ashok Kr Choudhary',
-      title: 'Settler Kawach Foundation',
-      description: 'He is an advocate practicing at Patna High Court since 1986. He has been involved in several high-profile civil cases and started his career with criminal matters.',
-      link: '/teacher-registration',
-    },
-    {
-        image: profile5,
-        name: 'Dr. Suprita Jha',
-        title: 'Vice Treasurer',
-        description: 'Dr. Suprita Jha is a highly skilled physiotherapist dedicated to promoting physical fitness and preventive healthcare. With a steadfast belief in the power of preventive treatment, she.',
-        link: '/teacher-registration',
-      },
-      {
-        image: profile2,
-      name: 'Dr. Aman Jha',
-      title: 'Secretary / Treasurer',
-      description: 'A famous dental implantologist of Dehradun with advanced dental techniques, his dedication extends beyond the clinic to the underprivileged and marginalized segments of society.',
-      link: '/teacher-registration',
-      },
-      {
-        image: profile6,
-        name: 'Miss Nishita',
-        title: 'Project Manager',
-        description: 'Nishita, a dedicated scholar pursuing her PHD in Psychology from Banaras Hindu University (BHU). With a specialization in hypnotism from California, USA, and a distinguished rec',
-        link: '/teacher-registration',
-      },
-  ];
+const TeamApi = () => {
+  const dispatch = useDispatch();
+  const { teams, status } = useSelector((state) => state.team);
+
+  const [expandedIndex, setExpandedIndex] = useState(null);
+
+  useEffect(() => {
+    if (status === "idle") {
+      dispatch(getallTeam());
+    }
+  }, [dispatch, status]);
+
+  const toggleDescription = (index) => {
+    setExpandedIndex((prevState) => (prevState === index ? null : index));
+  };
+
+  const getShortDescription = (description) => {
+    return description.split(" ").slice(0, 25).join(" ") + "...";
+  };
 
   return (
-    <div className="bg-white px-4 md:px-20 py-10 columns-1 md:columns-2 lg:columns-3">
-      <div className="">
-        {profiles.map((profile, index) => (
-          <ProfileCard
-            key={index}
-            image={profile.image}
-            name={profile.name}
-            title={profile.title}
-            description={profile.description}
-            link={profile.link}
-          />
-        ))}
-      </div>
+    <div className="bg-white px-4 md:px-20 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {teams?.data && teams.data.length > 0 ? (
+        teams.data.map((team, index) => {
+          const isExpanded = expandedIndex === index;
+
+          return (
+            <div
+              className={`text-center p-6 rounded-lg transition-all duration-500 ease-in-out ${
+                isExpanded ? "shadow-sm" : ""
+              }`}
+              key={index}
+            >
+              {/* Circular image */}
+              <div className="flex justify-center mb-4">
+                <img
+                  src={team.Image}
+                  alt={team.Name}
+                  className="w-40 h-40 rounded-full object-cover"
+                />
+              </div>
+
+              {/* Name */}
+              <h2 className="font-bold text-2xl">{team.Name}</h2>
+
+              {/* Title */}
+              <h3 className="font-bold text-xl text-[#06B13D] pt-2 pb-3">
+                {team.position}
+              </h3>
+
+              {/* Description */}
+              <p className="text-lg px-3 transition-all duration-500 ease-in-out">
+                {isExpanded
+                  ? team.description
+                  : getShortDescription(team.description)}
+              </p>
+
+              {/* Read More Button */}
+              <div className="flex justify-center mt-5">
+                <Button
+                  className="px-5 py-2 bg-[#FFED05] rounded-md"
+                  onClick={() => toggleDescription(index)}
+                >
+                  {isExpanded ? "Show Less" : "Read More"}
+                </Button>
+              </div>
+            </div>
+          );
+        })
+      ) : (
+        <div>No Team available</div>
+      )}
     </div>
   );
 };
 
-export default ProfileSection;
+export default TeamApi;

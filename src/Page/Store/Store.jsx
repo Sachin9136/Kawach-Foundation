@@ -12,6 +12,7 @@ import {
   import Footer from "../../components/footer/footer";
   import ProductListing from "../../components/ProductListing/ProductListing";
   import Store_Footer from "../../components/Store_Footer/Store_Footer";
+import CommanBanner from '../../components/Banners/CommanBanner';
 
 
 
@@ -19,13 +20,7 @@ const Store = () => {
 
   return (
     <>
-        <Row>
-            <Banner 
-                bannerImage={Store_banner}
-                headingText="Store"
-                textColor="#FFED05"
-            />
-        </Row>
+       <CommanBanner children={Store_banner} heading={"Store"}/>
 
         <ProductListing />
         <Store_Footer />

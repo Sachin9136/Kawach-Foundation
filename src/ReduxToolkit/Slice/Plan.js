@@ -5,6 +5,7 @@ import {
   createplanApi,
   updateplanApi,
   deleteplanApi,
+  getBannerApi,
 } from "../../Api_url";
 import { toast } from "react-toastify";
 
@@ -59,6 +60,17 @@ export const deleteplan = createAsyncThunk(
     }
   }
 );
+
+
+// get Banners
+export const getAllBanners = createAsyncThunk("getAllBanners/banners", async () => {
+  try {
+    const response = await axios.get(getBannerApi, { headers });
+    return response.data; 
+  } catch (error) {
+    throw new Error(error.message);
+  }
+});
 
 const planSlice = createSlice({
   name: "plan",

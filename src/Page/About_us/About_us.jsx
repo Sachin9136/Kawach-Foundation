@@ -11,10 +11,11 @@ import {
   } from "../../components/ComponentsIndex";
 
   import { Link } from "react-router-dom";
-  import ProfileSection from "../../components/ProfileCard/ProfileSection";
   import VideoSlider from "../../components/VideoSlider/VideoSlider";
   import Footer from "../../components/footer/footer";
+import CommanBanner from '../../components/Banners/CommanBanner';
 
+import { Journy_highlights } from "../../components/Img/ImportedImage";
 
 const About_us = () => {
 
@@ -26,13 +27,7 @@ const About_us = () => {
 
   return (
     <>
-        <Row>
-            <Banner 
-                bannerImage={bannerAboutUs}
-                headingText="About Us"
-                textColor="#FFED05"
-            />
-        </Row>
+       <CommanBanner children={Journy_highlights} heading={"About us"}/>
 
         <Row>
             <Heading className="font-bold text-2xl md:text-4xl text-center text-[#06B13D] px-3 py-10 ">Kawach: Empowering Health, Enriching Environment - India's <br /> Independent Force for Positive Change!</Heading>
@@ -164,14 +159,6 @@ const About_us = () => {
                 </div>
               </div>
           </Column>
-        </Row>
-
-        <Row className="bg-white px-4 md:px-20">
-            <h2 className="text-4xl text-center font-bold text-black">Governingbody</h2>
-        </Row>
-
-        <Row>
-            <ProfileSection />
         </Row>
 
         <Row>

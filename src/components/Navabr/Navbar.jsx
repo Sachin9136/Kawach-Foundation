@@ -23,7 +23,7 @@ function Navbar() {
   const menuItems = [
     { id: 1, name: "Home", link: "/" },
     {id: 2,name: "About Us",link: "/about-us",},
-    { id: 3, name: "Programme & Services", link: "/programme-services"},
+    { id: 3, name: "Our Team", link: "/our-team"},
     { id: 4, name: "Get Involved", link: "/get-involved" },
     // { id: 4, name: "Dental Treatment", link: "/dental-treatment" },
     { id: 5, name: "News & Updates", link: "/news-updates"},
